@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorLightGreen"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome To Delhi Dairy"
+            android:textSize="20sp"
+            android:textColor="#F70636"
+            android:gravity="center"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="150dp"
+            android:src="@drawable/heart1"
+            android:layout_marginRight="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please fill the form and pay tocken amount:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/btn_tname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Name"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                />
+            <EditText
+                android:id="@+id/btn_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your name"
+                android:layout_below="@+id/btn_tname"
+                android:background="@drawable/rectangle"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/btn_tmob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile No"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/btn_fname" />
+            <EditText
+                android:id="@+id/btn_fmob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your mobile no"
+                android:layout_below="@+id/btn_tmob"
+                android:background="@drawable/rectangle"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/btn_temail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email-id"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/btn_fmob" />
+
+            <EditText
+                android:id="@+id/btn_femail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Email-id"
+                android:layout_below="@+id/btn_temail"
+                android:background="@drawable/rectangle"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/btn_tadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/btn_femail" />
+
+            <EditText
+                android:id="@+id/btn_fadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Address"
+                android:layout_below="@+id/btn_tadd"
+                android:background="@drawable/rectangle"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/btn_tpin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pincode"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/btn_fadd" />
+
+            <EditText
+                android:id="@+id/btn_fpin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Pincode"
+                android:layout_below="@+id/btn_tpin"
+                android:background="@drawable/rectangle"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/btn_tquantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity:(Liter)"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/btn_fpin" />
+
+            <EditText
+                android:id="@+id/btn_fquantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Quantity"
+                android:layout_below="@+id/btn_tquantity"
+                android:background="@drawable/rectangle"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/btn_tque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Any Question:"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/btn_fquantity" />
+
+            <EditText
+                android:id="@+id/btn_fque"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Plz text"
+                android:layout_below="@+id/btn_tque"
+                android:background="@drawable/rectangle"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+
+                />
+            <Button
+                android:id="@+id/btn_button1"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_fque"
+                android:background="@drawable/rectangle1"
+                android:text="Submit and pay"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="50dp"
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
